@@ -11,7 +11,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
         images: [hello-world, alpine]
     runs-on: ${{ matrix.os }}
-    step:
+    steps:
     - name: Echo Docker Details
       run: docker info
 
